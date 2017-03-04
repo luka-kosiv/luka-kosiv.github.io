@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 /.idea/
 /_site/
+/_site/*.*
 **/.DS_Store
 /.sass-cache/
