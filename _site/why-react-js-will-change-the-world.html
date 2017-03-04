@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Writer Theme | Why React JS Will Change the World</title>
+    <meta name="description" content="React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data t...">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/why-react-js-will-change-the-world">
+    <link rel="alternate" type="application/rss+xml" title="Writer Theme" href="http://localhost:4000/feed.xml" />
+
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body class="">
+    <!-- if the user has javascript disabled they can still use the menu -->
+<noscript>
+    <div class="no-js-menu clearfix">
+        <ul>
+            
+                <li><i class="fa fa-home"></i><a href="/">Главная</a></li>
+            
+                <li><i class="fa fa-user"></i><a href="/author/michelle">Контакты</a></li>
+            
+        </ul>
+    </div>
+</noscript>
+<!-- end no script -->
+
+    <header class="hero-image" style='background-image: url(/img/feature-water.jpg);'>
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div id="menu-target">
+    <ul>
+        
+            <li><i class="fa fa-home"></i><a href="/">Главная</a></li>
+        
+            <li><i class="fa fa-user"></i><a href="/author/michelle">Контакты</a></li>
+        
+    </ul>
+</div>
+
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-8 single-content-sidebar">
+
+            <h1>Why React JS Will Change the World</h1>
+
+            <p>React components implement a <code class="highlighter-rouge">render()</code> method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by <code class="highlighter-rouge">render()</code> via <code class="highlighter-rouge">this.props</code>.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.highlight</span>  <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="m">#ffffff</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.highlight</span> <span class="nc">.c</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#999988</span><span class="p">;</span> <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span> <span class="p">}</span> <span class="c">/* Comment */</span>
+<span class="nc">.highlight</span> <span class="nc">.err</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#a61717</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#e3d2d2</span> <span class="p">}</span> <span class="c">/* Error */</span>
+<span class="nc">.highlight</span> <span class="nc">.k</span> <span class="p">{</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Keyword */</span>
+<span class="nc">.highlight</span> <span class="nc">.o</span> <span class="p">{</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Operator */</span>
+<span class="nc">.highlight</span> <span class="nc">.cm</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#999988</span><span class="p">;</span> <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span> <span class="p">}</span> <span class="c">/* Comment.Multiline */</span>
+<span class="nc">.highlight</span> <span class="nc">.cp</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#999999</span><span class="p">;</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Comment.Preproc */</span>
+<span class="nc">.highlight</span> <span class="nc">.c1</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#999988</span><span class="p">;</span> <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span> <span class="p">}</span> <span class="c">/* Comment.Single */</span>
+<span class="nc">.highlight</span> <span class="nc">.cs</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#999999</span><span class="p">;</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span> <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span> <span class="p">}</span> <span class="c">/* Comment.Special */</span>
+<span class="nc">.highlight</span> <span class="nc">.gd</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#000000</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ffdddd</span> <span class="p">}</span> <span class="c">/* Generic.Deleted */</span>
+<span class="nc">.highlight</span> <span class="nc">.gd</span> <span class="nc">.x</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#000000</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ffaaaa</span> <span class="p">}</span> <span class="c">/* Generic.Deleted.Specific */</span>
+<span class="nc">.highlight</span> <span class="nc">.ge</span> <span class="p">{</span> <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span> <span class="p">}</span> <span class="c">/* Generic.Emph */</span>
+<span class="nc">.highlight</span> <span class="nc">.gr</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#aa0000</span> <span class="p">}</span> <span class="c">/* Generic.Error */</span>
+<span class="nc">.highlight</span> <span class="nc">.gh</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#999999</span> <span class="p">}</span> <span class="c">/* Generic.Heading */</span>
+<span class="nc">.highlight</span> <span class="nc">.gi</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#000000</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ddffdd</span> <span class="p">}</span> <span class="c">/* Generic.Inserted */</span>
+<span class="nc">.highlight</span> <span class="nc">.gi</span> <span class="nc">.x</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#000000</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#aaffaa</span> <span class="p">}</span> <span class="c">/* Generic.Inserted.Specific */</span>
+<span class="nc">.highlight</span> <span class="nc">.go</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#888888</span> <span class="p">}</span> <span class="c">/* Generic.Output */</span>
+<span class="nc">.highlight</span> <span class="nc">.gp</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#555555</span> <span class="p">}</span> <span class="c">/* Generic.Prompt */</span>
+<span class="nc">.highlight</span> <span class="nc">.gs</span> <span class="p">{</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Generic.Strong */</span>
+<span class="nc">.highlight</span> <span class="nc">.gu</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#aaaaaa</span> <span class="p">}</span> <span class="c">/* Generic.Subheading */</span>
+<span class="nc">.highlight</span> <span class="nc">.gt</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#aa0000</span> <span class="p">}</span> <span class="c">/* Generic.Traceback */</span>
+<span class="nc">.highlight</span> <span class="nc">.kc</span> <span class="p">{</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Keyword.Constant */</span>
+<span class="nc">.highlight</span> <span class="nc">.kd</span> <span class="p">{</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Keyword.Declaration */</span>
+<span class="nc">.highlight</span> <span class="nc">.kp</span> <span class="p">{</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Keyword.Pseudo */</span>
+<span class="nc">.highlight</span> <span class="nc">.kr</span> <span class="p">{</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Keyword.Reserved */</span>
+<span class="nc">.highlight</span> <span class="nc">.kt</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#445588</span><span class="p">;</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Keyword.Type */</span>
+<span class="nc">.highlight</span> <span class="nc">.m</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#009999</span> <span class="p">}</span> <span class="c">/* Literal.Number */</span>
+<span class="nc">.highlight</span> <span class="nc">.s</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d14</span> <span class="p">}</span> <span class="c">/* Literal.String */</span>
+<span class="nc">.highlight</span> <span class="nc">.na</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#008080</span> <span class="p">}</span> <span class="c">/* Name.Attribute */</span>
+<span class="nc">.highlight</span> <span class="nc">.nb</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#0086B3</span> <span class="p">}</span> <span class="c">/* Name.Builtin */</span>
+<span class="nc">.highlight</span> <span class="nc">.nc</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#445588</span><span class="p">;</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Name.Class */</span>
+<span class="nc">.highlight</span> <span class="nc">.no</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#008080</span> <span class="p">}</span> <span class="c">/* Name.Constant */</span>
+<span class="nc">.highlight</span> <span class="nc">.ni</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#800080</span> <span class="p">}</span> <span class="c">/* Name.Entity */</span>
+<span class="nc">.highlight</span> <span class="nc">.ne</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#990000</span><span class="p">;</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Name.Exception */</span>
+<span class="nc">.highlight</span> <span class="nc">.nf</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#990000</span><span class="p">;</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Name.Function */</span>
+<span class="nc">.highlight</span> <span class="nc">.nn</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#555555</span> <span class="p">}</span> <span class="c">/* Name.Namespace */</span>
+<span class="nc">.highlight</span> <span class="nc">.nt</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#000080</span> <span class="p">}</span> <span class="c">/* Name.Tag */</span>
+<span class="nc">.highlight</span> <span class="nc">.nv</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#008080</span> <span class="p">}</span> <span class="c">/* Name.Variable */</span>
+<span class="nc">.highlight</span> <span class="nc">.ow</span> <span class="p">{</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span> <span class="p">}</span> <span class="c">/* Operator.Word */</span>
+<span class="nc">.highlight</span> <span class="nc">.w</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#bbbbbb</span> <span class="p">}</span> <span class="c">/* Text.Whitespace */</span>
+<span class="nc">.highlight</span> <span class="nc">.mf</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#009999</span> <span class="p">}</span> <span class="c">/* Literal.Number.Float */</span>
+<span class="nc">.highlight</span> <span class="nc">.mh</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#009999</span> <span class="p">}</span> <span class="c">/* Literal.Number.Hex */</span>
+<span class="nc">.highlight</span> <span class="nc">.mi</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#009999</span> <span class="p">}</span> <span class="c">/* Literal.Number.Integer */</span>
+<span class="nc">.highlight</span> <span class="nc">.mo</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#009999</span> <span class="p">}</span> <span class="c">/* Literal.Number.Oct */</span>
+<span class="nc">.highlight</span> <span class="nc">.sb</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d14</span> <span class="p">}</span> <span class="c">/* Literal.String.Backtick */</span>
+<span class="nc">.highlight</span> <span class="nc">.sc</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d14</span> <span class="p">}</span> <span class="c">/* Literal.String.Char */</span>
+<span class="nc">.highlight</span> <span class="nc">.sd</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d14</span> <span class="p">}</span> <span class="c">/* Literal.String.Doc */</span>
+<span class="nc">.highlight</span> <span class="nc">.s2</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d14</span> <span class="p">}</span> <span class="c">/* Literal.String.Double */</span>
+<span class="nc">.highlight</span> <span class="nc">.se</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d14</span> <span class="p">}</span> <span class="c">/* Literal.String.Escape */</span>
+<span class="nc">.highlight</span> <span class="nc">.sh</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d14</span> <span class="p">}</span> <span class="c">/* Literal.String.Heredoc */</span>
+<span class="nc">.highlight</span> <span class="nc">.si</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d14</span> <span class="p">}</span> <span class="c">/* Literal.String.Interpol */</span>
+<span class="nc">.highlight</span> <span class="nc">.sx</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d14</span> <span class="p">}</span> <span class="c">/* Literal.String.Other */</span>
+<span class="nc">.highlight</span> <span class="nc">.sr</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#009926</span> <span class="p">}</span> <span class="c">/* Literal.String.Regex */</span>
+<span class="nc">.highlight</span> <span class="nc">.s1</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d14</span> <span class="p">}</span> <span class="c">/* Literal.String.Single */</span>
+<span class="nc">.highlight</span> <span class="nc">.ss</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#990073</span> <span class="p">}</span> <span class="c">/* Literal.String.Symbol */</span>
+<span class="nc">.highlight</span> <span class="nc">.bp</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#999999</span> <span class="p">}</span> <span class="c">/* Name.Builtin.Pseudo */</span>
+<span class="nc">.highlight</span> <span class="nc">.vc</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#008080</span> <span class="p">}</span> <span class="c">/* Name.Variable.Class */</span>
+<span class="nc">.highlight</span> <span class="nc">.vg</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#008080</span> <span class="p">}</span> <span class="c">/* Name.Variable.Global */</span>
+<span class="nc">.highlight</span> <span class="nc">.vi</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#008080</span> <span class="p">}</span> <span class="c">/* Name.Variable.Instance */</span>
+<span class="nc">.highlight</span> <span class="nc">.il</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#009999</span> <span class="p">}</span> <span class="c">/* Literal.Number.Integer.Long */</span>
+
+<span class="c">/* Make line numbers unselectable: excludes line numbers from copy-paste user ops */</span>
+<span class="nc">.highlight</span> <span class="nc">.lineno</span> <span class="p">{</span><span class="nl">-webkit-user-select</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span><span class="nl">-moz-user-select</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">-o-user-select</span><span class="p">:</span> <span class="nb">none</span><span class="p">;}</span> 
+<span class="nc">.lineno</span><span class="nd">::-moz-selection</span> <span class="p">{</span><span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;}</span> <span class="c">/* Mozilla specific */</span>
+<span class="nc">.lineno</span><span class="nd">::selection</span> <span class="p">{</span><span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;}</span> <span class="c">/* Other major browsers */</span></code></pre></figure>
+
+<h2 id="want-commonjs">Want CommonJS?</h2>
+<p>If you want to use React with browserify, webpack, or another CommonJS-compatible module system, just use the react npm package. In addition, the jsx build tool can be integrated into most packaging systems (not just CommonJS) quite easily.</p>
+
+<h2 id="next-steps">Next Steps</h2>
+<p>Check out the tutorial and the other examples in the starter kit’s examples directory to learn more.</p>
+
+<p>We also have a wiki where the community contributes with workflows, UI-components, routing, data management etc.</p>
+
+<p>Good luck, and welcome!</p>
+
+
+        </div><!-- main-content/col -->
+
+        <div class="col-xs-12 col-md-3 col-md-offset-1 single-content-sidebar-area">
+
+            <img src='/img/dan.jpg' class="user-icon " alt="user-image">
+            <div class="meta">
+
+                <div class="sidebar-info">
+                    <a href="/author/dan">Dan robberts</a> in <a href='/category/coding'>Coding</a>
+                </div>
+
+                <div class="sidebar-readtime">
+                    <i class="fa fa-bookmark"></i> 22 minute read
+                </div>
+
+            </div>
+
+            <h2 class="favorites">Similar Posts</h2>
+
+            
+                
+                <div class="similar-post">
+                    <a href="/supercharge-your-workflow-with-grunt"><h3>Supercharge Your Workflow With Grunt</h3></a>
+                </div>
+                
+            
+                
+                <div class="similar-post">
+                    <a href="/css-with-superpowers"><h3>CSS with Superpowers</h3></a>
+                </div>
+                
+            
+                
+                <div class="similar-post">
+                    <a href="/ten-reasons-to-travel-the-world"><h3>10 Reasons to travel the world</h3></a>
+                </div>
+                
+            
+                
+                <div class="similar-post">
+                    <a href="/fake-it-until-you-make-it"><h3>Fake It Until You Make It</h3></a>
+                </div>
+                
+            
+                
+                <div class="similar-post">
+                    <a href="/its-not-always-that-simple"><h3>Its Not Always That Simple</h3></a>
+                </div>
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+<footer class="single">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2">
+            <img src="/img/dan.jpg" class="user-icon " alt="user-image">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="category-list">
+                <p>Published <span>Feb 10, 2015</span></p>
+                <p><a href="/author/dan">Dan robberts</a> in <a href='/category/coding'>Coding</a></p>
+
+                <div class="other-catergories">
+                    <h3>Also found in</h3>
+
+                    <ul>
+                        
+                        <li>
+                            <a href='/category/coding'>Coding</a>
+                            ,
+                        </li>
+                        
+                        <li>
+                            <a href='/category/coding'>Js</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div><!-- end col -->
+        <div class="col-xs-12 col-sm-4">
+            <div class="social">
+                <p>Share this article</a>
+                <div class="social-links">
+                    <a class="social-icon" href="#" data-platform="twitter" data-message="" data-url="http://localhost:4000/why-react-js-will-change-the-world"><i class="fa fa-twitter"></i></a>
+
+                    <a class="social-icon" href="#" data-platform="facebook" data-message="" data-url="http://localhost:4000/why-react-js-will-change-the-world"><i class="fa fa-facebook-official"></i></a>
+                    <a class="social-icon" data-platform="mail"  href="mailto:help@writer-theme.com?body=http://localhost:4000/why-react-js-will-change-the-world"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- end row -->
+</div>
+
+
+    
+        <div class="row read-another-section">
+    
+        
+        <a href="/supercharge-your-workflow-with-grunt"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/recommend-laptop.jpg'>
+            <h3 class="read-another">Supercharge Your Workflow With Grunt</h3>
+        </div></a>
+        
+    
+        
+        <a href="/css-with-superpowers"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/recommend-fire.jpg'>
+            <h3 class="read-another">CSS with Superpowers</h3>
+        </div></a>
+        
+    
+        
+        <a href="/ten-reasons-to-travel-the-world"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/recommend-wolf.jpg'>
+            <h3 class="read-another">10 Reasons to travel the world</h3>
+        </div></a>
+        
+    
+        
+        <a href="/fake-it-until-you-make-it"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/recommend-iceland.jpg'>
+            <h3 class="read-another">Fake It Until You Make It</h3>
+        </div></a>
+        
+    
+        
+        <a href="/its-not-always-that-simple"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/recommend-sunset.jpg'>
+            <h3 class="read-another">Its Not Always That Simple</h3>
+        </div></a>
+        
+    
+        
+        <a href="/stop-thinking-and-start-doing"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/recommend-spain.jpg'>
+            <h3 class="read-another">Stop Thinking And Start Doing</h3>
+        </div></a>
+        
+    
+        
+    
+        
+    
+</div>
+    
+</footer>
+
+
+    <script src='/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js'></script>
+    <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src='/js/vendor/jquery.jpanelmenu.min.js'></script>
+    <script type='application/javascript' src='/js/vendor/fastclick.min.js'></script>
+    
+    <script src=' /js/main.js'></script>
+    <link href="/css/syntax.css" rel="stylesheet">
+  </body>
+
+</html>
