@@ -21,27 +21,28 @@ square_related: recommend-laptop
 {% highlight java %}
 public class LongestCommonPrefix {
 
-    public static void main(String[] args) {
-        System.out.println(longestCommonPrefix(new String[]{
-            "abcde", "abcd", "abcdef", "abzz","abhh"
-        }));
-    }
+  public static void main(String[] args) {
+    System.out.println(longestCommonPrefix(new String[]{
+      "abcde", "abcd", "abcdef", "abzz","abhh"
+    }));
+  }
 
-    private static String longestCommonPrefix(String[] stringsArray) {
-        if (stringsArray == null || stringsArray.length == 0) return "";
+  private static String longestCommonPrefix(String[] stringsArray) {
+    if (stringsArray == null || stringsArray.length == 0) return "";
 
-        String prefix = stringsArray[0];
+      String prefix = stringsArray[0];
 
-        int wordIndex = 1;
-        while (wordIndex < stringsArray.length) {
-            while (stringsArray[wordIndex].indexOf(prefix) != 0) {
-                prefix = prefix.substring(0, prefix.length() - 1);
-                System.out.println();
-            }
-            wordIndex++;
+      int wordIndex = 1;
+      
+      while (wordIndex < stringsArray.length) {
+        while (stringsArray[wordIndex].indexOf(prefix) != 0) {
+          prefix = prefix.substring(0, prefix.length() - 1);
+            System.out.println();
         }
-        return prefix;
-    }
+        wordIndex++;
+      }
+      return prefix;
+  }
 }
 
 {% endhighlight %}
