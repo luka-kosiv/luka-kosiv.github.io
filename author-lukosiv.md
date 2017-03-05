@@ -5,7 +5,7 @@ permalink: author/lukosiv/
 feature_image: side-about-me
 author_avatar: lukosiv
 author_name: Luka Kosiv
-title: Luka Kosiv
+title: Обо мне
 ---
 
 # Luka Kosiv

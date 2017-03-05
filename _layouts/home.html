@@ -17,8 +17,13 @@ layout: with-sidebar
             {{ post.excerpt | truncatewords: 28 }}
 
             <p class="meta">
-                <a href='{{ "/category/" | append: post.categories.first | prepend: site.baseurl }}'>
-                    {{post.categories.first | capitalize }}</a>
+
+                {% for category in post.categories %}
+
+                <a href='{{ "/category/" | append: category | prepend: site.baseurl }}'>
+                    {{category | capitalize }}</a>
+            {% endfor %}
+
             </p>
         </div>
     </article>
