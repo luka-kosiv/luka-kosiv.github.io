@@ -1,13 +1,12 @@
 ---
 layout: post
-date: 2015-02-11 08:50:28
+date: 2017-03-04 08:50:28
 categories: coding js
-author_name : Dan Robberts
-author_url : /author/dan
-author_avatar: dan
+author_name : Luka Kosiv
+author_url : /author/lukosiv
+author_avatar: lukosiv
 show_avatar : true
-read_time : 34
-feature_image: feature-laptop
+feature_image: street-foster-city
 show_related_posts: true
 square_related: recommend-laptop
 ---
