@@ -21,13 +21,6 @@ layout: with-sidebar
                     {{post.categories.first | capitalize }}</a>
             </p>
         </div>
-
-
-        {% if post.show_avatar == true %}
-        <div class=" col-xs-2  no-gutter">
-            <img src="{{ site.baseurl}}/img/{{ post.author_avatar }}.jpg" class="user-icon user-1" alt="user-image">
-        </div>
-        {% endif %}
     </article>
     {% endfor %}
 

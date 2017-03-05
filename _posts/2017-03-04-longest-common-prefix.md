@@ -1,14 +1,14 @@
 ---
 layout: post
 date: 2017-03-04 08:50:28
-categories: coding java
+categories: algorithms java
 author_name : Luka Kosiv
 author_url : /author/lukosiv
 author_avatar: lukosiv
 show_avatar : true
-feature_image: street-foster-city
+feature_image: feature-san-fran
 show_related_posts: true
-square_related: recommend-laptop
+square_related: recommend-san-fran
 ---
 
 Написать функцию поиска самого длинного префикса в массиве строк.
@@ -45,3 +45,5 @@ public class LongestCommonPrefix {
 }
 
 {% endhighlight %}
+
+<!-- ![view]({{site.url}}/{{site.baseurl}}img/post-assets/view.jpg) -->
