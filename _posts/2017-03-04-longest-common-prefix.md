@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-03-04 08:50:28
-categories: coding js
+categories: coding java
 author_name : Luka Kosiv
 author_url : /author/lukosiv
 author_avatar: lukosiv

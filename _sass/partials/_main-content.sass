@@ -18,14 +18,19 @@
 		font-family: $sans
 		letter-spacing: 2pt
 		text-decoration: none
+		border-bottom: none
+		transition: all 0ms
 		color: $light-grey
 		+up-bold
 		+font-size(12)
 
-		&:hover,
+		&:hover
+			color: $text-color
+			border-bottom: none
+
 		&:active,
 		&.active
-			border-bottom: solid 2px #000
+			border-bottom: solid 3px #757578
 			color: $text-color
 
 .post

@@ -3,24 +3,17 @@ layout: default
 ---
 
 <header class="hero-image" style="background-image: url({{ site.baseurl }}/img/{{page.feature_image}}.jpg);">
-    <span class="menu-trigger animated fadeInDown">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </span>
-
-    {% include nav.html %}
 </header>
 
 <main class="container">
     <div class="row">
         <div class="col-xs-12 single-content">
-            <p class="meta">
-                <a href="{{ page.author_url | prepend: site.baseurl }}">{{ page.author_name | capitalize}}</a>
-                <i class="link-spacer"></i> <i class="fa fa-bookmark"></i> <a
-                    href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{
-                page.categories[0] | capitalize }}</a>
-            </p>
+
+            <div class="sub-nav">
+                <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>
+                    <i class="fa fa-long-arrow-left"></i>  {{ page.categories[0] | capitalize }}</a>
+            </div>
+
 
             <h1>{{ page.title }}</h1>
 

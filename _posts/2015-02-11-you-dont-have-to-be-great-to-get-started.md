@@ -1,10 +1,10 @@
 ---
-layout: post-sidebar
+layout: post
 date: 2015-02-10
 categories: motivation leadership journey
-author_name : Fred Smith
-author_url : /author/fred
-author_avatar: fred
+author_name : Luka Kosiv
+author_url : /author/lukosiv
+author_avatar: lukosiv
 show_avatar : true
 read_time : 16
 feature_image: feature-san-fran
