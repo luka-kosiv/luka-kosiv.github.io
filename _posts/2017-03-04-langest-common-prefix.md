@@ -49,27 +49,26 @@ square_related: recommend-san-fran
 {% highlight java %}
 public class LongestCommonPrefix {
 
-    public static void main(String[] args) {
-        System.out.println(longestPrefix(new String[]{
-                "abcd", "abcde", "abcdef", "abzz", "abhh"
-        }));
+  public static void main(String[] args) {
+   System.out.println(longestPrefix(new String[]{
+     "abcd", "abcde", "abcdef", "abzz", "abhh"
+   }));
+  }
+
+  private static String longestPrefix(String[] strings) {
+    if (strings == null || strings.length == 0) return "";
+
+    String prefix = strings[0];
+
+    int wordIndex = 1;
+    while (wordIndex < strings.length) {
+      while (strings[wordIndex].indexOf(prefix) != 0) {
+        prefix = prefix.substring(0, prefix.length() - 1);
+      }
+      wordIndex++;
     }
-
-    private static String longestPrefix(String[] strings) {
-        if (strings == null || strings.length == 0) return "";
-
-        String prefix = strings[0];
-
-        int wordIndex = 1;
-        while (wordIndex < strings.length) {
-            while (strings[wordIndex].indexOf(prefix) != 0) {
-                prefix = prefix.substring(0, prefix.length() - 1);
-                System.out.println();
-            }
-            wordIndex++;
-        }
-        return prefix;
-    }
+    return prefix;
+  }
 }
 
 {% endhighlight %}
